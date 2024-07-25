@@ -1,0 +1,12 @@
+{
+  "name": "shorturlfrontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server" : "node ../ShortUrl/index.js",
+    "build" : "npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
