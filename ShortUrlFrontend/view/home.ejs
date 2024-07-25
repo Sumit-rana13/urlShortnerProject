@@ -10,8 +10,11 @@
 <body>
     <div class="container1">
         <h1>URL Shortner</h1>
+        <% if (process.env.BACKEND_URL) { %>
+            <p>URL Generated: <%= process.env.BACKEND_URL %>/url/<%= id %></p>
+        <% } %>
         <% if (locals.id) { %>
-        <p>URL Generated: <%= process.env.BACKEND_URL || 'http://localhost:8001' %>/url/<%= id %></p>
+        <p>URL Generated: <%= 'http://localhost:8001' %>/url/<%= id %></p>
 
         <% } %>
         <div>
