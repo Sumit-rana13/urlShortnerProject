@@ -10,11 +10,8 @@
 <body>
     <div class="container1">
         <h1>URL Shortner</h1>
-        <% if (process.env.BACKEND_URL) { %>
-            <p>URL Generated: <%= process.env.BACKEND_URL %>/url/<%= id %></p>
-        <% } %>
         <% if (locals.id) { %>
-        <p>URL Generated: <%= 'https://urlshortner-project-lobm.onrender.com' %>/url/<%= id %></p>
+        <p>URL Generated: <%= process.env.BACKEND_URL || 'https://urlshortner-project-lobm.onrender.com' %>/url/<%= id %></p>
 
         <% } %>
         <div>
